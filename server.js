@@ -37,7 +37,7 @@ app.use('*',function(req,res){
    res.sendFile(path.join(__dirname,'./client/build/index.html'));
 })
 //PORT
-const PORT=process.env.PORT;
+const PORT=process.env.PORT||8080;
 
 //run listen
 app.listen(PORT,()=>{
